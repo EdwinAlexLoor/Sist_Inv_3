@@ -1,0 +1,10 @@
+{% extends 'base2.html' %}
+
+{% block contenido %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form_p.as_p }}
+        <input type="submit" value="Guardar Usuario"/>
+    </form>
+
+{% endblock %}

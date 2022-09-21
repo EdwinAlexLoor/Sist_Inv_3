@@ -1,0 +1,23 @@
+{% extends "base2.html" %}
+{% block inicio %}
+
+
+    <title> Eliminar bodega </title>
+
+    <div class="b-example-divider ">
+        <h2 class="text-center">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bi bi-trash"/>
+            </svg>
+            "Eliminar Bodega"
+        </h2>
+    </div>
+
+    <form class="text-center py-lg-3 " method="post">
+        {% csrf_token %}
+        {{ bodega_e.as_p }}
+        <input type="submit" value="Eliminar Persona"/>
+    </form>
+
+
+{% endblock %}
