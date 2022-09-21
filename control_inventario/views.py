@@ -75,7 +75,7 @@ def exportarListaPersonaPdf(request):
 
 @login_required(None, "", 'login')
 def exportarListaProductoPdf(request):
-    # Create a file-like buffer to receive PDF data.
+    # Create a file-like buffer to receive PDF data.ASKDJNASKJ
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'filename="lista_productos.pdf"'
 
